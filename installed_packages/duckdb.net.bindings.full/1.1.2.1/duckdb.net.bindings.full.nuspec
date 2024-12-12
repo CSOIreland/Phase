@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DuckDB.NET.Bindings.Full</id>
+    <version>1.1.2.1</version>
+    <authors>Giorgi Dalakishvili</authors>
+    <owners></owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>Logo.jpg</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/Giorgi/DuckDB.NET</projectUrl>
+    <description>DuckDB Bindings for C#.</description>
+    <releaseNotes>Added support for creating user-defined scalar functions.
+
+Added support for Varint type.
+
+Added support for writing to Enum columns when using managed Appender.
+
+Updated to DuckDB v1.1.2</releaseNotes>
+    <copyright>Copyright © 2020 - 2024 Giorgi Dalakishvili</copyright>
+    <tags>DuckDB ADO.NET Database Olap Embedded</tags>
+    <repository type="git" url="https://github.com/Giorgi/DuckDB.NET" branch="main" commit="a2bb658e370c173a8e8f416152f6546e464ad329" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+      <group targetFramework="net8.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>CSO.AutoMapper</id>
+    <version>0.0.1</version>
+    <authors>Central Statistics Office, Ireland</authors>
+    <description>Package Description</description>
+    <releaseNotes>- [ENHANCEMENT] Upgraded to 13.0.1 version of automapper</releaseNotes>
+    <copyright>Central Statistics Office, Ireland</copyright>
+    <repository type="git" url="https://github.com/CSOIreland/CSOAutomapper" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="AutoMapper" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+</package>

@@ -1,0 +1,1 @@
+﻿I will give you a json structure that summarizes the contents of a dataset as published by the Central Statistics Office of Ireland. You will return a summary in 200 words or less that describes the data in natural language. In the same description you will also suggest uses for the dataset. Make sure that you include the time period covered by the dataset.

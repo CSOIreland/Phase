@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>DuckDB.NET.Data.Full</id>
+    <version>1.1.3</version>
+    <authors>Giorgi Dalakishvili</authors>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>Logo.jpg</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/Giorgi/DuckDB.NET</projectUrl>
+    <description>DuckDB ADO.NET Provider for C#.</description>
+    <releaseNotes>Added support for creating user-defined table valued functions.
+
+Added support for passing LIST parameter types
+
+Updated to DuckDB v1.1.3</releaseNotes>
+    <copyright>Copyright © 2020 - 2024 Giorgi Dalakishvili</copyright>
+    <tags>DuckDB ADO.NET Database Olap Embedded</tags>
+    <repository type="git" url="https://github.com/Giorgi/DuckDB.NET" branch="main" commit="1c8cc9b8f790843e4bb70c1e3c5edd19d3baf27c" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="DuckDB.NET.Bindings.Full" version="1.1.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="DuckDB.NET.Bindings.Full" version="1.1.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="DuckDB.NET.Bindings.Full" version="1.1.3" exclude="Build,Analyzers" />
+        <dependency id="System.Memory" version="4.5.5" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

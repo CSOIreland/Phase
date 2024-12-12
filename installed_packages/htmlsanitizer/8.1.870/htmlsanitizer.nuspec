@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>HtmlSanitizer</id>
+    <version>8.1.870</version>
+    <authors>Michael Ganss</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/mganss/HtmlSanitizer</projectUrl>
+    <description>Cleans HTML from constructs that can be used for cross-site scripting (XSS)</description>
+    <copyright>Copyright 2013-2024 Michael Ganss</copyright>
+    <tags>xss anti antixss html security</tags>
+    <repository type="git" url="git://github.com/mganss/HtmlSanitizer" commit="1c05d6ccf98cd69ef08f2b4942f03fd680f78a80" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="AngleSharp" version="[0.17.1]" exclude="Build,Analyzers" />
+        <dependency id="AngleSharp.Css" version="[0.17.0]" exclude="Build,Analyzers" />
+        <dependency id="System.Collections.Immutable" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="AngleSharp" version="[0.17.1]" exclude="Build,Analyzers" />
+        <dependency id="AngleSharp.Css" version="[0.17.0]" exclude="Build,Analyzers" />
+        <dependency id="System.Collections.Immutable" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

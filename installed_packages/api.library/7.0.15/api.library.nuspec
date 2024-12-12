@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>API.Library</id>
+    <version>7.0.15</version>
+    <authors>Central Statistics Office, Ireland</authors>
+    <description>Package Description</description>
+    <releaseNotes>- [ENHANCEMENT] added argon2 sha256 methods -- GetArgon2SHA256 and VerifyArgon2SHA256
+      - [BUG FIX] moved where  trace.TrcRequestVerb = requestMethod; as if blockedurls used then verb wouldn't be set
+      - [BUG FIX] updated GatherTraceInformation to  take in an IRequest interface and check the interface type to determine the parameters
+      - [ENHANCEMENT]  upgraded EnyimMemcachedCore from 3.2.1 to 3.2.3
+      - [ENHANCEMENT] upgraded Microsoft.Extensions.DependencyInjection from 8.0.0 to 8.0.1
+      - [ENHANCEMENT] upgraded Microsoft.Extensions.Logging from 8.0.0 to 8.0.1
+      - [ENHANCEMENT] upgraded System.Diagnostics.PerformanceCounter from 8.0.0 to 8.0.1
+      - [ENHANCEMENT] upgraded System.DirectoryServices.AccountManagement from 8.0.0 to 8.0.1</releaseNotes>
+    <copyright>Central Statistics Office, Ireland</copyright>
+    <repository type="git" url="https://github.com/CSOIreland/Server-API-Library" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="EnyimMemcachedCore" version="3.2.3" exclude="Build,Analyzers" />
+        <dependency id="Konscious.Security.Cryptography.Argon2" version="1.3.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="5.2.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="8.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="8.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Log4Net.AspNetCore" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.PerformanceCounter" version="8.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.DirectoryServices.AccountManagement" version="8.0.1" exclude="Build,Analyzers" />
+        <dependency id="log4net" version="2.0.17" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+</package>
