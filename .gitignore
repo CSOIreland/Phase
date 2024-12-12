@@ -2,3 +2,6 @@
 /Phase/bin
 /PhaseHarvester/PhaseHarvester/obj
 /PhaseHarvester/PhaseHarvester/bin
+*.vsidx
+.suo
+/.vs/Phase/v17/DocumentLayout.json
