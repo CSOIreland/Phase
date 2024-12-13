@@ -9,5 +9,10 @@ namespace Phase
         {
             return new Search_BSO_Read(requestApi).Read().Response;
         }
+
+        public static dynamic Read(RESTful_API requestApi)
+        {
+            return new Search_BSO_Read(requestApi).Read().Response;
+        }
     }
 }

@@ -147,9 +147,9 @@ namespace PxStat.Template
 
                 if (Response.data != null)
                 {
-                    Response.response = Response.data.ToString();
+                    Response.response = API.Utility.JsonSerialize_IgnoreLoopingReference(Response.data);//.ToString();
                     //We need to change e.g. an Excel file to a byte array
-                    string data = Response.data.ToString();
+                    string data = API.Utility.JsonSerialize_IgnoreLoopingReference(Response.data);
                     if (data.Contains(";base64,"))
                     {
                         var base64Splits = data.Split(new[] { ";base64," }, StringSplitOptions.None);

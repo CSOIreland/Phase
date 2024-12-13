@@ -1,4 +1,8 @@
-﻿namespace Phase
+﻿using Newtonsoft.Json;
+using PxStat.Resources;
+using System.Web;
+
+namespace Phase
 {
     public class Search_DTO
     {
@@ -6,17 +10,31 @@
         public string Search { get; set; }
         public Search_DTO(dynamic parameters)
         {
-            if (parameters.LngIsoCode != null)
+            if (parameters.Count == null)
             {
-                LngIsoCode = parameters.LngIsoCode;
+                
+                if (parameters.LngIsoCode != null)
+                {
+                    LngIsoCode = parameters.LngIsoCode;
+                }
+                else
+                    LngIsoCode = "en";
+
+                if (parameters.Search != null)
+                {
+                    Search = parameters.Search;
+                }
             }
             else
-                LngIsoCode = "en";
-
-            if(parameters.Search!=null)
             {
-                Search = parameters.Search; 
+                if(parameters.Count>1)
+                    LngIsoCode = parameters[1];
+                if (parameters.Count > 2) 
+                    Search= HttpUtility.UrlDecode(parameters[2]);
             }
+            
         }
+
+
     }
 }

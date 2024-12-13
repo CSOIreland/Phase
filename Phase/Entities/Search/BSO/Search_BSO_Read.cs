@@ -55,7 +55,7 @@ namespace Phase
             {
                 Log.Instance.Info("Items returned=" + response.data.Count);
                 Response.statusCode=System.Net.HttpStatusCode.OK;
-                Response.mimeType = "application/json";
+                
                 Response.data = results;
             }
             else {
